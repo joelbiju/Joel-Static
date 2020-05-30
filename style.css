@@ -1,9 +1,8 @@
-  body{
-    
+  .main-bg{
     background-image: url(Background.jpg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: cover;
     
   }
@@ -126,13 +125,13 @@ color: #ffff;
 .progressbar1{
   align-content: center;
   width: 30%;
-  float: left;
+  float: right;
 }
 
 .progressbar2{
   align-content: center;
   width: 30%;
-  float: left;
+  float: right;
   
 }
 
