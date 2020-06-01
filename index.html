@@ -14,36 +14,36 @@
     <script type="text/javascript">
 
 
-        // var isEmpty = false;
-        // var element = document.getElementById("message");
-        //     $("#check").on('click', function () {
-        //         isEmpty = false
-        //         $('input[type=text]:required').each(function () {
-        //             if ($(this).val() === '')
-        //                 isEmpty = true;
-        //         });
+    //     var isEmpty = false;
+    //     var element = document.getElementById("message");
+    //         $("#check").on('click', function () {
+    //             isEmpty = false
+    //             $('input[type=text]:required').each(function () {
+    //                 if ($(this).val() === '')
+    //                     isEmpty = true;
+    //             });
 
-        //         $('input[type=email]:required').each(function () {
-        //             if ($(this).val() === '')
-        //                 isEmpty = true;
-        //         });
+    //             $('input[type=email]:required').each(function () {
+    //                 if ($(this).val() === '')
+    //                     isEmpty = true;
+    //             });
 
-        //         if (element) {
-        //             isEmpty = true;
-        //         }
+    //             if (element) {
+    //                 isEmpty = true;
+    //             }
 
-        //         if (isEmpty) {
-        //             alert('error please fill all fields!');
-        //         } else {
-        //             alert('I will get in touch shortly!!')
-        //         }
-        //     });
+    //             if (isEmpty) {
+    //                 alert('error please fill all fields!');
+    //             } else {
+    //                 alert('I will get in touch shortly!!')
+    //             }
+    //         });
 
 
     function submit(){
-        var message = document.getElementById("message");
-        var name = document.getElementById("name");
-        var email = document.getElementById("email");
+        var message = document.getElementById("message").value;
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
         if(message&&name&&email){
             alert("I will get in touch shortly");
         }
@@ -61,6 +61,8 @@
         //     document.getElementById("email").value = "";
         //     document.getElementById("message").value = "";
         // }
+
+
     </script>
 </head>
 
