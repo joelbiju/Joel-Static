@@ -44,13 +44,11 @@
         var message = document.getElementById("message").value;
         var name = document.getElementById("name").value;
         var email = document.getElementById("email").value;
-        if(message === "" && name === "" && email === ""){
+        if(message === "" || name === "" || email === ""){
             alert("Fill all the Fields");
-
         }
         else{
             alert("I will get in touch shortly");
-
         }
     }
 
