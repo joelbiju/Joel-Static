@@ -1,10 +1,9 @@
-  .main-bg{
+.main-bg{
     background-image: url(Background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: cover;
-    
   }
 
 .backimg{
@@ -105,7 +104,7 @@ h1{
   max-width: 100%;
 }
 
-.contact-section button{
+.contact-section but{
   background: none;
   color: #70a1ff;
   border: 1px solid #70a1ff;
@@ -117,7 +116,7 @@ h1{
   cursor: pointer;
 }
 
-.contact-section button:hover{
+.contact-section but:hover{
 background: #70a1ff;
 color: #ffff;
 }
