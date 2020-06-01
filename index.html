@@ -11,58 +11,20 @@
     <link href="./Modern CV a Personal Website_files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="./Modern CV a Personal Website_files/swipebox.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <script type="text/javascript">
 
-
-    //     var isEmpty = false;
-    //     var element = document.getElementById("message");
-    //         $("#check").on('click', function () {
-    //             isEmpty = false
-    //             $('input[type=text]:required').each(function () {
-    //                 if ($(this).val() === '')
-    //                     isEmpty = true;
-    //             });
-
-    //             $('input[type=email]:required').each(function () {
-    //                 if ($(this).val() === '')
-    //                     isEmpty = true;
-    //             });
-
-    //             if (element) {
-    //                 isEmpty = true;
-    //             }
-
-    //             if (isEmpty) {
-    //                 alert('error please fill all fields!');
-    //             } else {
-    //                 alert('I will get in touch shortly!!')
-    //             }
-    //         });
-
-
-    function confirm(){
-        var message = document.getElementById("message").value;
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        if(message === "" || name === "" || email === ""){
-            alert("Fill all the Fields");
+        function confirm(){
+            var message = document.getElementById("message").value;
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            if(message === "" || name === "" || email === ""){
+                alert("Fill all the Fields");
+            }
+            else{
+                alert("I will get in touch shortly");
+            }
         }
-        else{
-            alert("I will get in touch shortly");
-        }
-    }
-
-
-        // function showMessage() {
-        //     alert("I will get in touch shortly")
-        // }
-        // function clearFields() {
-        //     document.getElementById("name").value = "";
-        //     document.getElementById("email").value = "";
-        //     document.getElementById("message").value = "";
-        // }
-
-
     </script>
 </head>
 
