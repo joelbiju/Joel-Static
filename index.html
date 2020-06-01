@@ -41,11 +41,10 @@
 
 
     function submit(){
-        var empty = false;
         var message = document.getElementById("message");
         var name = document.getElementById("name");
         var email = document.getElementById("email");
-        if(message||name||email){
+        if(message&&name&&email){
             alert("I will get in touch shortly");
         }
         else{
@@ -61,8 +60,7 @@
         //     document.getElementById("name").value = "";
         //     document.getElementById("email").value = "";
         //     document.getElementById("message").value = "";
-            
-        }
+        // }
     </script>
 </head>
 
