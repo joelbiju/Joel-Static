@@ -12,13 +12,39 @@
     <link rel="stylesheet" href="./Modern CV a Personal Website_files/swipebox.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type="text/javascript">
-        function showMessage() {
-            alert("I will get in touch shortly")
-        }
-        function clearFields() {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
+        var isEmpty = false;
+        var element = document.getElementById("message");
+            $("#check").on('click', function () {
+                isEmpty = false
+                $('input[type=text]:required').each(function () {
+                    if ($(this).val() === '')
+                        isEmpty = true;
+                });
+
+                $('input[type=email]:required').each(function () {
+                    if ($(this).val() === '')
+                        isEmpty = true;
+                });
+
+                if (element) {
+                    isEmpty = true;
+                }
+
+                if (isEmpty) {
+                    alert('error please fill all fields!');
+                } else {
+                    alert('I will get in touch shortly!!')
+                }
+            });
+
+
+        // function showMessage() {
+        //     alert("I will get in touch shortly")
+        // }
+        // function clearFields() {
+        //     document.getElementById("name").value = "";
+        //     document.getElementById("email").value = "";
+        //     document.getElementById("message").value = "";
             
         }
     </script>
@@ -199,7 +225,7 @@
                     <input type="email" id="email" class="email" placeholder="Your Email" >
                     <textarea rows="1" id="message" placeholder="Message" class="message" ></textarea>
                     <br><br>
-                    <input class="submit" type="submit" value="Get in Touch"  onclick="clearFields();showMessage();"/>
+                    <input id="check" class="submit" type="submit" value="Get in Touch"  onclick="clearFields();showMessage();"/>
                     <!-- <button onclick="showMessage();clearFields();">Get in touch</button> -->
                 </form>
             </div>
