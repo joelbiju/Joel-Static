@@ -159,3 +159,6 @@ color: #ffff;
   border: 10px solid white;*/
 }
 
+html{
+  scroll-behavior: smooth;
+}
